@@ -1,4 +1,4 @@
-
+/* Body */
 body {
     font-family: "Lato", sans-serif;
     background-color: #f4f4f9;
@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
 }
 
+/* Estilização dos links */
 a {
     text-decoration: none;  
     color: #a443d7; 
@@ -30,6 +31,7 @@ a:active {
     background-color: #bb62eb;  
 }
 
+/* Header */
 header {
     width: 100%;
     background-color: #ffffff;
@@ -39,6 +41,7 @@ header {
     z-index: 1000;
 }
 
+/* Barra de navegação */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -57,18 +60,18 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-/* nav ul li a:hover {
-    color: #a443d7;
-} */
-
 #nav-item:hover{
     color:#a443d7;
     background-color: #ffffff;
 }
 
+#nav-item:active{
+    color:#ffffff;
+    background-color: #e0d4f7;
+}
 
-
-
+/* Ajustando Aside e Main em um Container */
+/* Aqui utilizei o display */
 
 .container {
     display: flex;
@@ -76,6 +79,7 @@ nav ul li a {
     width: 100%;
 }
 
+/* Início Aside */
 aside {
     flex: 1;
     position: static;
@@ -116,6 +120,7 @@ img {
     border: 3px solid #b862e6;
 }
 
+/* Início Main */
 main {
     flex: 4;
     padding: 30px;
@@ -124,6 +129,7 @@ main {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Seções do Main */
 
 #sobre-mim, #experiencia, #formacao, #habilidades, #linguas {
     padding: 0 20px;
@@ -154,6 +160,8 @@ main {
     margin-bottom: 10px;
 }
 
+/* Cria bolinhas do nível das habilidades: */
+
 .skill-level {
     display: inline-block; /* As bolinhas ficarão na mesma linha que o texto da habilidade */
 }
@@ -172,32 +180,33 @@ main {
 }
 
 #linguas ul {
-    list-style-type: none; /* Remove os marcadores padrão */
+    list-style-type: none; 
     padding: 0;
 }
 
 #linguas li {
-    font-size: 16px; /* Tamanho do texto */
-    margin-bottom: 10px; /* Espaçamento entre itens */
-    position: relative; /* Necessário para posicionamento do marcador personalizado */
-    padding-left: 20px; /* Espaço para o marcador personalizado */
+    font-size: 16px; 
+    margin-bottom: 10px; 
+    position: relative;
+    padding-left: 20px; 
 }
 
 #linguas li:before {
-    content: "-"; /* Marcador personalizado */
-    color: #a443d7; /* Cor roxa */
-    font-size: 30px; /* Tamanho do marcador */
-    position: absolute; /* Posicionamento absoluto dentro do li */
-    left: 0; /* Alinha à esquerda */
-    top: -10px; /* Ajuste fino da posição vertical */
+    content: "-";
+    color: #a443d7; 
+    font-size: 30px;
+    position: absolute; 
+    left: 0; 
+    top: -10px; 
 }
 
+/* Estilização de Cabeçalhos */
 
 h2 {
     font-size: 20px;
-    padding-bottom: 10px; /* Espaço entre o texto e a linha */
-    border-bottom: 2px solid #ccc; /* Cor e espessura da linha */
-    margin-bottom: 20px; /* Espaço após a linha */
+    padding-bottom: 10px; 
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px; 
 }
 
 h5 {
@@ -205,8 +214,26 @@ h5 {
     margin-bottom: 10px;
 }
 
+/* Footer */
 
-@media (max-width: 700px) {
+footer {
+    flex-direction: row;
+    background-color: #f4f4f9; 
+    color: #333; 
+    text-align: right; 
+    padding: 20px 0; 
+    font-size: 16px; 
+    border-top: 1px solid #ccc; 
+}
+
+footer address {
+    font-style: normal; 
+    line-height: 1.6; 
+}
+
+/* Ajustar para mobile: está funcionando para a maioria das opções pelo Google Chrome */
+
+@media (max-width: 767px) {
     
     header {
         padding: 10px 0;
@@ -234,6 +261,7 @@ h5 {
         height: auto;
     }
 
+    /* decidi deixar o aside expandido na versão mobile, ficou mais bonito */
     aside{
         font-size: 12px;
         width: 100%;
@@ -254,4 +282,58 @@ h5 {
     h2 {
         font-size: 16px;
     }
+
+    #habilidades ul li,#linguas ul li {
+        font-size: 14px;
+    }
+
+}
+
+/* Ajustar para IPad e Tablet */
+@media screen and (min-width: 768px) and (max-width: 1366px){
+
+    header {
+        padding: 10px 0;
+    }
+    .container {
+        display: flex;
+    }
+
+    aside{
+        flex:1;
+        font-size: 14px;
+        width: 20%;
+    }
+
+    #img-perfil {
+        width: 120px;
+        height: auto;
+    }
+
+    .contacts{
+        font-size: 12px;
+    }
+
+    #icon-contacts{
+        width: 10px;
+        text-align: center;
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    main {
+        flex:2;
+        font-size: 14px;
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #habilidades ul li,#linguas ul li {
+        font-size: 16px;
+    }
+    
 }
