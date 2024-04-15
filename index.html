@@ -1,0 +1,154 @@
+<!-- Curriculum Vital Page in HTML and CSS -->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curriculum Vitae</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Importa fonte Lato do google: -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a id="nav-item" href="#sobre-mim">Sobre mim</a></li>
+                    <li><a id="nav-item" href="#experiencia">Experiência</a></li>
+                    <li><a id="nav-item" href="#formacao">Formação</a></li>
+                    <li><a id="nav-item" href="#habilidades">Habilidades</a></li>
+                    <li><a id="nav-item" href="#linguas">Linguas</a></li>
+                    <li><a id="nav-item" href="html_dict.html">Dicionário HTML</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class = "container">
+            <aside>
+                <img id="img-perfil" src="src/foto_gabi.jpeg" width="500">
+                <h3>Gabriela Ramire Bueno Masso</h3>
+                <div class= "contacts">
+                    <p>
+                        <img id="icon-contacts" src="src/phone.svg" alt="Telefone">
+                        (14) 99728-2898
+                    </p>
+                    <p>
+                        <img id="icon-contacts" src="src/email.svg" alt="E-mail">
+                        <a href="mailto:gabiramire.bm@gmail.com">gabiramire.bm@gmail.com</a>
+                    </p>
+                    <p>
+                        <img id="icon-contacts" src="src/github.svg" alt="GitHub">
+                        <a href="https://github.com/gabiramire" target="_blank">github.com/gabiramire</a>
+                    </p>
+                    <p>
+                        <img id="icon-contacts" src="src/linkedin.svg" alt="LinkedIn">
+                        <a href="https://www.linkedin.com/in/gabriela-ramire-10aa3323a/" target="_blank">linkedin.com/in/gabriela-ramire</a>
+                    </p>
+                </class>
+                    <address>
+                        <p>
+                            <img id="icon-contacts" src="src/location.svg" alt="Endereço">
+                            Florianópolis, SC
+                        </p>
+                    </address>
+                </div>
+            </aside>
+            <main>
+                <section id="sobre-mim">
+                    <h2>Sobre Mim</h2>
+                    <div class = "sobre-mim-texto">
+                        <p>Atualmente atuo como analista de QA no Laboratório Bridge, dedicando-me a garantir 
+                            a qualidade e eficácia de soluções de software através de testes e análise. Possuo experiência prévia em 
+                            Data Mining e Machine Learning, áreas nas quais desenvolvi projetos que enriqueceram minha 
+                            habilidade de identificar padrões e otimizar processos. </p>
+                        <p>Estou em busca de oportunidades que me permitam 
+                            aprofundar meus conhecimentos em testes automatizados e aplicar minha capacidade analítica para melhorar 
+                            continuamente as práticas de testes de desenvolvimento de software. 
+                        <p>Acredito que a qualidade é fundamental em todos os aspectos do desenvolvimento de software e estou 
+                            comprometida em promover práticas de teste que assegurem a entrega de produtos excepcionais.</p>
+                    </div>
+                </section>
+                <section id="experiencia">
+                    <h2>Experiência</h2>
+                    <div class="experiencia-item">
+                        <h4>Iniciação Científica PIBIC/CNPq - BIPI/UFSC</h4>
+                        <h5>09/2020 - 08/2021</h5>
+                        <p>Projeto e pesquisa: Python, Data Mining, Machine Learning, Probabilidade e Estatística.
+                            Tema: “Isolamento inteligente e identificação de grupos de vírus de Covid-19 e sua mutação e dispersão.”
+                        </p>
+                        <p><a href="//pibic.sistemas.ufsc.br/certificado/certificado/877362?tipo=Aluno&merito=Situacoes" target="_blank">Certificado de Iniciação Científica pela PIBIC</a></p>
+                    </div>
+                    <div class="experiencia-item">
+                        <h4>Participação do 31º Seminário de Iniciação Científica e Tecnológica da UFSC</h4>
+                        <h5>11/2021</h5>
+                        <p>Sob a orientação do(a) professor(a) VANIA BOGORNY.</p>
+                        <p><a href="https://pibic.sistemas.ufsc.br/certificado/certificado/988021?tipo=Aluno&merito=Seminario" target="_blank">Certificado de Participação do Seminário</a></p>
+                    </div>
+                    <div class="experiencia-item">
+                        <h4>Analista de QA - Laboratório Bridge</h4>
+                        <h5>09/2021 - Atual</h5>
+                        <p>Atuação em testes manuais e automatizados, análise de requisitos, elaboração de casos de teste, 
+                            execução de testes, reporte de bugs, acompanhamento de correções e validação de entregas.</p>
+                        <p><a href="https://portal.bridge.ufsc.br/" target="_blank">Portal do Laboratório Bridge</a></p>
+                    </div>
+                </section>                    
+                <section id="formacao">
+                    <h2>Formação</h2>
+                    <div class="formacao-item">
+                        <h4>UFSC  -  Florianópolis-SC</h4>
+                        <h5>08/2018 - Atual</h5>
+                        <p>Graduanda em Ciências da Computação</p>
+                        <p><a href="https://www.ufsc.br/" target="_blank">Site da UFSC</a></p>
+                    </div>
+                </section>
+                <section id="habilidades">
+                    <h2>Habilidades</h2>
+                        <ul>
+                            <li>
+                                <div class="skill-level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div>
+                                Python
+                            </li>
+                            <li>
+                                <div class="skill-level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span></div>
+                                Java
+                            </li>
+                            <li>
+                                <div class="skill-level"><span class="filled"></span><span class="filled"></span><span></span><span></span></div>
+                                C++
+                            </li>
+                            <li>
+                                <div class="skill-level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div>
+                                GitHub
+                            </li>
+                            <li>
+                                <div class="skill-level"><span class="filled"></span><span class="filled"></span><span></span><span></span></div>
+                                Cypress
+                            </li>
+                            <li>
+                                <div class="skill-level"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span></div>
+                                Graphiql
+                            </li>
+                            <li>
+                                <div class="skill-level"><span class="filled"></span><span></span><span></span><span></span></div>
+                                Postman
+                            </li>
+                        </ul>
+                </section>
+                <section id="linguas">
+                    <h2>Línguas</h2>
+                    <ul>
+                        <li>
+                            Português Fluente (língua nativa)
+                        </li>
+                        <li>
+                            Inglês Fluente
+                        </li>
+                        <li>
+                            Espanhol Intermediário     
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            </main>
+</html>
